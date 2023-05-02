@@ -3,24 +3,17 @@
         {
             "name": "Text Extraction Microservice",
             "repositoryName": "rtr-text-extraction-microservice",
-            "repositoryBaseURL": "https://github.com/BrenoAlberto",
-            "handlers": [
-                {
-                    "name": "text_extraction",
-                    "description": "Extract text from various file formats"
-                }
-            ]
+            "repositoryBaseURL": "https://github.com/BrenoAlberto"
         },
         {
             "name": "Text Storage Microservice",
             "repositoryName": "rtr-text-storage-microservice",
-            "repositoryBaseURL": "https://github.com/BrenoAlberto",
-            "handlers": [
-                {
-                    "name": "plays",
-                    "description": "Store and manage plays"
-                }
-            ]
+            "repositoryBaseURL": "https://github.com/BrenoAlberto"
+        },
+        {
+            "name": "Script Upload and Processing Microservice",
+            "repositoryName": "rtr-script-upload-and-processing-microservice",
+            "repositoryBaseURL": "https://github.com/BrenoAlberto"
         }
     ]
 }

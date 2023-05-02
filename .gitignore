@@ -1,0 +1,6 @@
+*
+!.gitignore
+!generate_docs_and_clone_script.py
+!microservices.json
+!clone_microservices.sh
+!README.md
