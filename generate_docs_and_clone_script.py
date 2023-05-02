@@ -36,18 +36,18 @@ def create_clone_script(data):
 
 def write_documentation(data):
     with open("documentation.md", "w") as doc:
-        doc.write("## Microservices\n\n")
         for microservice in data["microservices"]:
-            doc.write(f"### {microservice['name']}\n\n")
+            doc.write(f"## {microservice['name']}\n\n")
             doc.write(
                 f"Repository: ({microservice['repositoryBaseURL']}/{microservice['repositoryName']})\n\n"
             )
 
             if not os.path.isfile(f"{microservice['repositoryName']}/functions.yml"):
                 doc.write("#### No handlers found\n\n")
+                doc.write("---\n\n")
                 continue
 
-            doc.write("#### Handlers\n\n")
+            doc.write("### Handlers\n\n")
 
             with open(
                 f"{microservice['repositoryName']}/functions.yml", "r"
@@ -58,6 +58,7 @@ def write_documentation(data):
                 if "description" in functions_data[handler]:
                     doc.write(f"- {handler}: {functions_data[handler]['description']}\n")
             doc.write("\n")
+            doc.write("---\n\n")
 
 def update_readme():
     with open("README.md", "r") as readme:
