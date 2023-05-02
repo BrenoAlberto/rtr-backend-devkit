@@ -6,8 +6,7 @@ if [ ! -d "rtr-text-extraction-microservice" ]; then
 else
   echo "Pulling latest changes for Text Extraction Microservice..."
   cd rtr-text-extraction-microservice
-  git checkout main
-  git pull origin main
+  git fetch origin 
   cd ..
 fi
 if [ ! -d "rtr-text-storage-microservice" ]; then
@@ -16,8 +15,7 @@ if [ ! -d "rtr-text-storage-microservice" ]; then
 else
   echo "Pulling latest changes for Text Storage Microservice..."
   cd rtr-text-storage-microservice
-  git checkout main
-  git pull origin main
+  git fetch origin 
   cd ..
 fi
 if [ ! -d "rtr-script-upload-and-processing-microservice" ]; then
@@ -26,8 +24,7 @@ if [ ! -d "rtr-script-upload-and-processing-microservice" ]; then
 else
   echo "Pulling latest changes for Script Upload and Processing Microservice..."
   cd rtr-script-upload-and-processing-microservice
-  git checkout main
-  git pull origin main
+  git fetch origin 
   cd ..
 fi
 if [ ! -d "rtr-chat-microservice" ]; then
@@ -36,8 +33,7 @@ if [ ! -d "rtr-chat-microservice" ]; then
 else
   echo "Pulling latest changes for Chat Microservice..."
   cd rtr-chat-microservice
-  git checkout main
-  git pull origin main
+  git fetch origin 
   cd ..
 fi
 

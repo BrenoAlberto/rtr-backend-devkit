@@ -12,8 +12,7 @@ if [ ! -d "{repository_name}" ]; then
 else
   echo "Pulling latest changes for {microservice_name}..."
   cd {repository_name}
-  git checkout main
-  git pull origin main
+  git fetch origin 
   cd ..
 fi
 """
