@@ -36,7 +36,6 @@ with open("clone_microservices.sh", "w") as script:
 
 os.chmod("clone_microservices.sh", 0o755)
 
-# Execute the clone_microservices.sh script
 subprocess.run("./clone_microservices.sh", shell=True)
 
 with open("documentation.md", "w") as doc:
@@ -47,9 +46,7 @@ with open("documentation.md", "w") as doc:
             f"Repository: ({microservice['repositoryBaseURL']}/{microservice['repositoryName']})\n\n"
         )
 
-        if not os.path.isfile(
-            f"{microservice['repositoryName']}/functions.yml"
-        ):
+        if not os.path.isfile(f"{microservice['repositoryName']}/functions.yml"):
             doc.write("#### No handlers found\n\n")
             continue
 
@@ -59,7 +56,6 @@ with open("documentation.md", "w") as doc:
             f"{microservice['repositoryName']}/functions.yml", "r"
         ) as functions_file:
             functions_data = yaml.safe_load(functions_file)
-
 
         for handler in functions_data:
             if "description" in functions_data[handler]:
@@ -72,8 +68,11 @@ with open("README.md", "r") as readme:
 with open("README.md", "w") as readme:
     for line in readme_lines:
         readme.write(line)
-        if line.strip() == "## Documentation":
+        if line.strip() == "# Documentation":
             break
+
+    readme.truncate()
+    readme.write("\n")
 
     with open("documentation.md", "r") as doc:
         for line in doc.readlines():

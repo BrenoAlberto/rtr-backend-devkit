@@ -24,6 +24,7 @@ Repository: (https://github.com/BrenoAlberto/rtr-text-extraction-microservice)
 
 #### Handlers
 
+- extractText: Extract text from base64 encoded files
 
 ### Text Storage Microservice
 
@@ -37,4 +38,5 @@ Repository: (https://github.com/BrenoAlberto/rtr-script-upload-and-processing-mi
 
 #### Handlers
 
+- processScript: Extracts key information (characters, scenes, etc.) from a play script
 
