@@ -40,3 +40,11 @@ Repository: (https://github.com/BrenoAlberto/rtr-script-upload-and-processing-mi
 
 - processScript: Extracts key information (characters, scenes, etc.) from a play script
 
+### Chat Microservice
+
+Repository: (https://github.com/BrenoAlberto/rtr-chat-microservice)
+
+#### Handlers
+
+- chat: Chat with a character
+

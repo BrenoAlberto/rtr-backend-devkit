@@ -30,5 +30,15 @@ else
   git pull origin main
   cd ..
 fi
+if [ ! -d "rtr-chat-microservice" ]; then
+  echo "Cloning Chat Microservice..."
+  git clone https://github.com/BrenoAlberto/rtr-chat-microservice.git
+else
+  echo "Pulling latest changes for Chat Microservice..."
+  cd rtr-chat-microservice
+  git checkout main
+  git pull origin main
+  cd ..
+fi
 
 echo "All microservices have been updated successfully."
