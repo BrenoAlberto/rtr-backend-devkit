@@ -16,35 +16,41 @@ The main features of the `rtr-backend-devkit` repository include:
 
 # Documentation
 
-## Microservices
-
-### Text Extraction Microservice
+## Text Extraction Microservice
 
 Repository: (https://github.com/BrenoAlberto/rtr-text-extraction-microservice)
 
-#### Handlers
+### Handlers
 
 - extractText: Extract text from base64 encoded files
 
-### Text Storage Microservice
+---
+
+## Text Storage Microservice
 
 Repository: (https://github.com/BrenoAlberto/rtr-text-storage-microservice)
 
 #### No handlers found
 
-### Script Upload and Processing Microservice
+---
+
+## Script Upload and Processing Microservice
 
 Repository: (https://github.com/BrenoAlberto/rtr-script-upload-and-processing-microservice)
 
-#### Handlers
+### Handlers
 
 - processScript: Extracts key information (characters, scenes, etc.) from a play script
 
-### Chat Microservice
+---
+
+## Chat Microservice
 
 Repository: (https://github.com/BrenoAlberto/rtr-chat-microservice)
 
-#### Handlers
+### Handlers
 
 - chat: Chat with a character
+
+---
 
